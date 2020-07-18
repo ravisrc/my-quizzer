@@ -1,0 +1,21 @@
+This is a web application to simulate the online quiz that constitutes the following feature:
+
+   # We will store all the responses in one responses table and will track the score from it.
+   # Also we will keep a column in the users table so that we can track where the user has lastly stopped the quiz.
+   # We would also fetch the responses from the responses table if the users is not visiting for the first time.
+
+The database can be accessed by using :
+   name: 'rsrc',
+   password: '123456',
+   dbname: 'quiz',
+   host: 'localhost' or '127.0.0.1'
+
+This is a project that has been assigned to do as a part of the Kshitij Web Development Workshop.
+
+Optional Time based feature includes the following feature:
+
+   # We will also leave a table for the quizzes administators so that each user will also be tracked in how many quizzes an for what quizzes he is registered in a many to many table.
+
+UI Features:
+
+   There will be a`

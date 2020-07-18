@@ -1,0 +1,314 @@
+SQL Commands for adding the questions {
+
+
+   /***************** LEVEL 1 *******************/
+
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (3,1,1,'Input objects of computer?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (2,2,1,'Spectacles short form?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (1,3,1,'Languages Are Not?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (4,4,1,'Ocupations are not?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (2,5,1,'Non Output objects of the computer?');
+
+   /***************** LEVEL 2 *******************/
+
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (4,6,2,'Mobile has no?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (1,7,2,'Laptop has no?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (2,8,2,'Processor?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (1,9,2,'Monitors?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (2,10,2,'MotherBoards?');
+
+   /***************** LEVEL 3 *******************/
+
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (2,11,3,'Educational Institutions?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (1,12,3,'Books Company?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (3,13,3,'Among the following first electronics?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (4,14,3,'Latest ac s?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (1,15,3,'Iot?'); 
+
+   /***************** LEVEL 4 *******************/
+
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (1,16,4,'Fan has?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (4,17,4,'Your name is?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (2,18,4,'Rain falls?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (2,19,4,'Sun rises from?');
+   INSERT INTO `questions`( `correctAns`, `questionNumber`, `level`, `question`)
+                  VALUES (1,20,4,'month has _____ days?');
+}
+
+Question Paper:
+{
+
+      /**************** LEVEL 1 ******************/
+   {
+
+      1. Input objects of the computer?
+         1. Monitor
+         2. Fan
+         3. Mouse ****
+         4. Air
+
+      2. Spectacles short form?
+         1. Air
+         2. Specs ****
+         3. Mouse
+         4. Bottle
+
+      3. Languages Are Not?
+         1. C$ ****
+         2. C
+         3. C++
+         4. C#
+
+      4. Ocupations are not?
+         1. Professor
+         2. Lecturer
+         3. Sanitizer
+         4. CPU ****
+
+      5. Non Output objects of the computer?
+         1. Monitor
+         2. Charger ****
+         3. Projector
+         4. Screen
+   }
+
+      /**************** LEVEL 2 ******************/
+   {
+
+      6. Mobile has no?
+         1. Screen
+         2. Charger
+         3. Earphones
+         4. Inverter ****
+
+      7. Laptop has no?
+         1. Freezer ****
+         2. Charger
+         3. Earphones
+         4. Fan
+
+      8. Processor?
+         1. BPL
+         2. Intel ****
+         3. Crizal
+         4. Ponds
+
+      9. Monitors?
+         1. Dell ****
+         2. Gigabyte
+         3. Ponds
+         4. Videocon
+
+      10. MotherBoards?
+         1. Dell
+         2. Gigabyte ****
+         3. Ponds
+         4. Videocon
+   }
+      
+      /**************** LEVEL 3 ******************/
+   {
+
+      11. Educational Institutions?
+         1. Classmate
+         2. Sri Chaitanya ****
+         3. Samsung
+         4. Haier
+
+      12. Books Company?
+         1. Classmate ****
+         2. Sri Chaitanya
+         3. Samsung
+         4. Haier
+
+      13. Among the following first electronics?
+         1. Classmate
+         2. Sri Chaitanya
+         3. Samsung ****
+         4. Haier
+
+      14. Latest ac s?
+         1. Classmate
+         2. Sri Chaitanya
+         3. Samsung
+         4. Haier ****
+
+      15. Iot?
+         1. Internet of things ****
+         2.  Irvien of things
+         3.  Inside of things
+         4.  Internet of totoise
+      
+   }
+
+      /**************** LEVEL 4 ******************/
+   {
+
+      16. Fan has?
+         1. Motor ****
+         2. Specs
+         3. Paper
+         4. sanitiser
+
+      17. Your name is?
+         1. 45
+         2. 98
+         3. 15
+         4. none ****
+
+      18. Rain falls?
+         1. up
+         2. down ****
+         3. to the sky
+         4. none
+
+      19. Sun rises from?
+         1. Monitor
+         2. east ****
+         3. Mouse
+         4. Air
+
+      20. month has _____ days?
+         1. 29 ****
+         2. 30
+         3. 31
+         4. 365
+   } 
+}
+
+SQL Commands for adding Options {
+   {
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (1,1,'Monitor');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (1,2,'Fan');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (1,3,'Mouse');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (1,4,'Air');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (2,1,'Air');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (2,2,'Specs');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (2,3,'Mouse');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (2,4,'Bottle');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (3,1,'C$');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (3,2,'C');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (3,3,'C++');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (3,4,'C#');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (4,1,'Professor');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (4,2,'Lecturer');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (4,3,'Sanitizer');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (4,4,'CPU');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (5,1,'Monitor');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (5,2,'Charger');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (5,3,'Projector');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (5,4,'Screen');
+   }
+   {
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (6,1,'Screen');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (6,2,'Charger');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (6,3,'Earphones');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (6,4,'Inverter');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (7,1,'Freezer');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (7,2,'Charger');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (7,3,'Earphones');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (7,4,'Fan');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (8,1,'BPL');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (8,2,'Intel');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (8,3,'Crizal');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (8,4,'Ponds');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (9,1,'Dell');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (9,2,'Gigabyte');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (9,3,'Ponds');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (9,4,'Videocon');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (10,1,'Dell');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (10,2,'Gigabyte');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (10,3,'Ponds');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (10,4,'Videocon');
+   }
+   {
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (11,1,'Classmate');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (11,2,'Sri Chaitanya');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (11,3,'Samsung');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (11,4,'Haier');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (12,1,'Classmate');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (12,2,'Sri Chaitanya');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (12,3,'Samsung');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (12,4,'Haier');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (13,1,'Classmate');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (13,2,'Sri Chaitanya');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (13,3,'Samsung');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (13,4,'Haier');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (14,1,'Classmate');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (14,2,'Sri Chaitanya');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (14,3,'Samsung');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (14,4,'Haier');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (15,1,'Internet of things');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (15,2,'Irvien of things');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (15,3,'Inside of things');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (15,4,'Internet of totoise');
+   }
+   {
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (16,1,'Motor');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (16,2,'Specs');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (16,3,'Paper');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (16,4,'sanitiser');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (17,1,'54');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (17,2,'45');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (17,3,'98');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (17,4,'none');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (18,1,'up');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (18,2,'down');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (18,3,'top');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (18,4,'none');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (19,1,'Monitor');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (19,2,'east');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (19,3,'Mouse');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (19,4,'Air');
+
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (20,1,'29');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (20,2,'30');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (20,3,'31');
+      INSERT INTO `options`( `questionId`, `optionValue`, `content`) VALUES (20,4,'365');
+   }
+}
+
+PDO Queries to fetch the question Paper{
+   SELECT * from questions order by questionNumber
+   (loop through the questions){
+      "display question"
+      SELECT * from options where questionId = [reqQuesId] ORDER by optionValue
+      (loop through the questions){
+         "display them as options"
+      }
+   }
+}

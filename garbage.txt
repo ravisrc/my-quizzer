@@ -1,0 +1,26 @@
+// Fetching the Whole Question paper
+   
+   require_once('pdo.php');
+   $questionsPaper = false;
+
+   $stmt = $pdo->prepare('SELECT * FROM Questions ORDER BY level,questionNumber');
+   $stmt->execute();
+   $questions = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+   foreach ($questions as $question) {
+      $questionsPaper .= "<li class='questions'>Level " . $question['level'] . " : Q.No. " . $question['questionNumber'] . ".<br/>" .  $question['question'];
+      $stmt = $pdo->prepare('SELECT * FROM options WHERE questionId = :qId ORDER BY optionValue');
+      $stmt->execute(array('qId' => $question['questionId']));
+      $options = $stmt->fetchAll(PDO::FETCH_ASSOC);
+      foreach ($options as $option) {
+         $questionsPaper .=   "<p class='option'><input type='radio' 
+                                    name='question" . $option['questionId'] . "' 
+                                    id='option" . $option['optionId'] . "'
+                                    value='question" . $option['optionValue'] . "'
+                              />
+                              <label 
+                                 for='option" . $option['optionId'] . "'
+                                 >" . $option['content'] . "
+                              </label></p>";
+      }
+      $questionsPaper .= "</li>";
